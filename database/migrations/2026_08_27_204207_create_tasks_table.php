@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
 
             $table->string('project_id');
-            $table->string('assisgnet_to_user_it')->nullable();
+            $table->string('assigned_to_user_id')->nullable();
             $table->string('title');
             $table->text('description');
             $table->enum('status', ['todo', 'in_progress', 'done']);
